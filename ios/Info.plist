@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <!-- ── App info ── -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>CFBundleDisplayName</key>
+    <string>Platform SM</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>sm_mobile</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>$(FLUTTER_BUILD_NAME)</string>
+    <key>CFBundleSignature</key>
+    <string>????</string>
+    <key>CFBundleVersion</key>
+    <string>$(FLUTTER_BUILD_NUMBER)</string>
+
+    <!-- ── Orientasi ── -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+    <!-- ── Google Maps API Key ── -->
+    <!-- GANTI YOUR_GOOGLE_MAPS_API_KEY dengan key asli -->
+    <key>GMSApiKey</key>
+    <string>AIzaSyBsPfZeUe8Jm5Shr3ToevC39SyzO8lAPvE</string>
+
+    <!-- ── Izin lokasi ── -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Aplikasi membutuhkan akses lokasi untuk mengirim posisi petugas ke Command Center.</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Aplikasi membutuhkan akses lokasi di background agar posisi petugas tetap terpantau saat aplikasi tidak aktif.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Aplikasi membutuhkan akses lokasi di background untuk tracking patroli.</string>
+
+    <!-- ── Izin kamera (untuk foto laporan nanti) ── -->
+    <key>NSCameraUsageDescription</key>
+    <string>Digunakan untuk mengambil foto laporan kegiatan di lapangan.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Digunakan untuk memilih foto dari galeri untuk laporan.</string>
+
+    <!-- ── Allow HTTP (untuk IP internal tanpa HTTPS) ── -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+
+    <!-- ── Flutter ── -->
+    <key>CADisableMinimumFrameDurationOnPhone</key>
+    <true/>
+    <key>UIApplicationSupportsIndirectInputEvents</key>
+    <true/>
+
+</dict>
+</plist>
